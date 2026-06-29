@@ -446,10 +446,10 @@ function isMobile() {
 
 
 if (window.top.innerWidth < 768) {
-  adf_overlay_img.src = "https://www.tbsnews.net/file/business-standrad-320-x-50-pix1jpg";
+  adf_overlay_img.src = "https://tbsad.pages.dev/Business-Standrad-320-X-50-Pix-Mobile.gif";
   
 } else {
-  adf_overlay_img.src = "https://www.tbsnews.net/sites/default/files/uploads/2026/06/23/tropical_homes_ta_tower.jpg";
+  adf_overlay_img.src = "https://tbsad.pages.dev/Business-Standrad-728-X-90.gif";
 }
 
 

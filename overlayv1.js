@@ -412,7 +412,7 @@ height:${height + "px"};
 <div class="adf_overlay">
 
 <img onclick="ctaFunction()" 
-src="https://www.tbsnews.net/sites/default/files/uploads/2026/06/23/tropical_homes_ta_tower.jpg" class="absolute adf_overlay_img animate__animated animate__fadeInBottom">
+src="https://tbsad.pages.dev/Business-Standrad-728-X-90.gif" class="absolute adf_overlay_img animate__animated animate__fadeInBottom">
 
 
 </div>
@@ -422,11 +422,11 @@ src="https://www.tbsnews.net/sites/default/files/uploads/2026/06/23/tropical_hom
 </div>
 
 <!-- modal info --> 
-<link rel="stylesheet" href="https://tbsads.pages.dev/modal.css">
+<link rel="stylesheet" href="https://tbsad.pages.dev/modal.css">
 <div class="adf-modal-info" id="adf-modal-info">
-<script src="https://tbsads.pages.dev/modal.js"></script>
+<script src="https://tbsad.pages.dev/modal.js"></script>
 
-<script src="https://tbsads.pages.dev/jquery.min.js"></script>
+<script src="https://tbsad.pages.dev/jquery.min.js"></script>
 
 <script>
 

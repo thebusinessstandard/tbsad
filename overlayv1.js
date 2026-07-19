@@ -313,7 +313,7 @@ a.jw_media_holder.alignfull .copy1{
   right:0;
   width: 15px;
   height: 15px;
-  background: url('https://www.tbsnews.net/sites/default/files/uploads/2026/06/23/close.svg') 0 0/100% 100% no-repeat;
+  background: url('') 0 0/100% 100% no-repeat;
   -webkit-animation: 1s .4s both fadeIn24;
   animation: 1s .4s both fadeIn24
 }

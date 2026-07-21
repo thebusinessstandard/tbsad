@@ -39,34 +39,26 @@ function ctaFunction() {
   window.open(clickTag);
 }
 
-/*function overlay(featured_image) {
+function overlay(featured_image) {
 var width = featured_image.clientWidth;
 var height = featured_image.clientHeight;
-if(publisher_name==="tbsnews.net"){
+/*if(publisher_name==="tbsnews.net"){
   iframeValue[0].setAttribute(
     "style",
     `border:none;position:relative; width:${width}px;height:${height}px;margin-top:-${height+5}px`
   );
 
 }
-else{
+else{ 
+  */
   iframeValue[0].setAttribute(
     "style",
     `position:fixed; border:none; width:${width}px;height:${height}px;margin-bottom:-${height+5}px`
   );
 
 }
-*/
-iframeValue[0].setAttribute(
-  "style",
-  `position:absolute;
-   border:none;
-   width:${width}px;
-   height:${height}px;
-   left:0;
-   bottom:0;
-   z-index:999;`
-);
+
+
 
 
 

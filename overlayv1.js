@@ -250,7 +250,7 @@ a.jw_media_holder.alignfull .copy1{
   animation-duration: 2s;
   cursor: pointer;
   position: absolute;
-  z-index: 999;
+ // z-index: 999;
 }
 
 .absolute {

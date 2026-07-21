@@ -45,7 +45,7 @@ var height = featured_image.clientHeight;
 if(publisher_name==="tbsnews.net"){
   iframeValue[0].setAttribute(
     "style",
-    `border:none;position:absolute; width:${width}px;height:${height}px;margin-top:-${height+5}px`
+    `border:none;position:fixed; width:${width}px;height:${height}px;margin-top:-${height+5}px`
   );
 
 }
@@ -53,7 +53,7 @@ else{
   
   iframeValue[0].setAttribute(
     "style",
-    `position:absolute; border:none; width:${width}px;height:${height}px;margin-bottom:-${height+5}px`
+    `position:fixed; border:none; width:${width}px;height:${height}px;margin-bottom:-${height+5}px`
   );
 
 }

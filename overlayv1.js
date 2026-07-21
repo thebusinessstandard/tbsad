@@ -225,7 +225,7 @@ a.jw_media_holder.alignfull .copy1{
   }
 
 #adf_image_overlay_section {
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 

@@ -4,7 +4,7 @@ var publisher_name = window.location.hostname
 .slice(-2)
 .join(".");
 
-var featured_image = publisher_name!=="ntvbd.com"?  top.document.querySelector(".adf-overlay img"):top.document.querySelectorAll('[id=adf-overlay]')[1];
+var featured_image = publisher_name!=="bites.tbsnews.net"?  top.document.querySelector(".adf-overlay img"):top.document.querySelectorAll('[id=adf-overlay]')[1];
 
 var scriptElement = document.getElementById("adf-marker-tbs");
 // Get the value of the id attribute
@@ -198,7 +198,7 @@ a.jw_media_holder.alignfull .copy1{
 
 }
 
-/* Rtv */
+
 
 @media (max-width:600px) {
   .dtl_img_section .adf_overlay img {

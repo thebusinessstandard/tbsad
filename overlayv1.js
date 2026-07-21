@@ -39,7 +39,7 @@ function ctaFunction() {
   window.open(clickTag);
 }
 
-function overlay(featured_image) {
+/*function overlay(featured_image) {
 var width = featured_image.clientWidth;
 var height = featured_image.clientHeight;
 if(publisher_name==="tbsnews.net"){
@@ -56,6 +56,19 @@ else{
   );
 
 }
+*/
+iframeValue[0].setAttribute(
+  "style",
+  `position:absolute;
+   border:none;
+   width:${width}px;
+   height:${height}px;
+   left:0;
+   bottom:0;
+   z-index:999;`
+);
+
+
 
 var html = top.document.createElement("div");
 html.setAttribute("id", "adf_image_overlay_section");

@@ -45,7 +45,7 @@ var height = featured_image.clientHeight;
 if(publisher_name==="tbsnews.net"){
   iframeValue[0].setAttribute(
     "style",
-    `border:none;position:fixed; width:${width}px;height:${height}px;margin-top:-${height+5}px`
+    `border:none;position:relative; width:${width}px;height:${height}px;margin-top:-${height+5}px`
   );
 
 }

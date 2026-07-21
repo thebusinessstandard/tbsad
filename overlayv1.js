@@ -53,7 +53,7 @@ else{
   */
   iframeValue[0].setAttribute(
     "style",
-    `position:fixed; border:none; width:${width}px;height:${height}px;margin-bottom:-${height+5}px`
+    `position:absolute; border:none; width:${width}px;height:${height}px;margin-bottom:-${height+5}px`
   );
 
 }

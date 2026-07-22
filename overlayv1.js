@@ -4,20 +4,46 @@ var publisher_name = window.location.hostname
 .slice(-2)
 .join(".");
 
-var featured_image = publisher_name!=="bites.tbsnews.net"?  top.document.querySelector(".adf-overlay img"):top.document.querySelectorAll('[id=adf-overlay]')[1];
+var featured_image = null;
+var iframeValue = null;
+
+
+//var featured_image = publisher_name!=="bites.tbsnews.net"?  top.document.querySelector(".adf-overlay img"):top.document.querySelectorAll('[id=adf-overlay]')[1];
 
 var scriptElement = document.getElementById("adf-marker-tbs");
 // Get the value of the id attribute
 var idValue = scriptElement.getAttribute('name');
-var iframeValue = document.getElementsByName(idValue)
+//var iframeValue = document.getElementsByName(idValue)
 
+/*
+timer testing 
 var timer = setInterval(featureimageloaded, 500);
+*/
+
+// timer testing new
+var attempts = 0;
+
+var timer = setInterval(function () {
+
+  attempts++;
+
+  featureimageloaded();
+
+  if (attempts > 60) {   // 30 seconds
+    clearInterval(timer);
+    console.log("Overlay timed out.");
+  }
+
+}, 500);
+
+// timer testing new end
+
 
 var top_image = "";
 var replace_image = "";
 
-
-function featureimageloaded() {
+// commented out for testing 
+/*function featureimageloaded() {
 
 if ( featured_image && featured_image.complete === true) {
 
@@ -25,7 +51,39 @@ if ( featured_image && featured_image.complete === true) {
   overlay(featured_image);
 }
 
+}*/
+
+
+// testing 
+function featureimageloaded() {
+
+  featured_image =
+    publisher_name !== "bites.tbsnews.net"
+      ? top.document.querySelector(".adf-overlay img")
+      : top.document.querySelectorAll('[id=adf-overlay]')[1];
+
+  iframeValue = document.getElementsByName(idValue);
+
+  console.log({
+  featuredImageFound: !!featured_image,
+  imageComplete: featured_image ? featured_image.complete : false,
+  iframeCount: iframeValue ? iframeValue.length : 0,
+  attempts: attempts
+});
+
+  if (
+    featured_image &&
+    featured_image.complete &&
+    iframeValue &&
+    iframeValue.length > 0
+  ) {
+    clearInterval(timer);
+    overlay(featured_image);
+  }
+
 }
+// testing end 
+
 
 function insertAfter(referenceNode, newNode) {
 referenceNode.parentNode.insertBefore(

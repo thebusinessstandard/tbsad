@@ -509,7 +509,7 @@ function isMobile() {
 
 
 if (window.top.innerWidth < 768) {
-  adf_overlay_img.src = "https://tbsad.pages.dev/Daily-Star-320-X-50-Pix-Mobile.gif";
+  adf_overlay_img.src = "https://tbsad.pages.dev/Business-Standrad--320-X-50-Pix-Mobilev1.gif";
   
 } else {
   adf_overlay_img.src = "https://tbsad.pages.dev/Business-Standrad-728-X-90-Desktop.gif";

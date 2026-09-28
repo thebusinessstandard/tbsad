@@ -481,7 +481,7 @@ height:${height + "px"};
 <div class="adf_overlay">
 
 <img onclick="ctaFunction()" 
-src="https://tbsad.pages.dev/Business-Standrad-728-X-90.gif" class="absolute adf_overlay_img animate__animated animate__fadeInBottom">
+src="https://tbsad.pages.dev/Desktop-GIF-728-90.gif" class="absolute adf_overlay_img animate__animated animate__fadeInBottom">
 
 
 </div>
@@ -515,10 +515,10 @@ function isMobile() {
 
 
 if (window.top.innerWidth < 768) {
-  adf_overlay_img.src = "https://tbsad.pages.dev/Business-Standrad--320-X-50-Pix-Mobilev1.gif";
+  adf_overlay_img.src = "https://tbsad.pages.dev/Mobile-GIF-320-50.gif";
   
 } else {
-  adf_overlay_img.src = "https://tbsad.pages.dev/Desktop.html";
+  adf_overlay_img.src = "https://tbsad.pages.dev/Desktop-GIF-728-90.gif";
 }
 
 

@@ -150,8 +150,14 @@ function isMobile() {
 
   html +=
     `
-<!-- overlay image css -->
-<script type="text/javascript">var clickTag ="https://www.tropicalhomesltd.com/projects/ta-tower"</script>
+<!-- Old clickTag - commented out -->
+<!-- <script type="text/javascript">var clickTag ="https://www.tropicalhomesltd.com/projects/ta-tower"</script> -->
+
+<script type="text/javascript">
+var clickTag = window.top.innerWidth < 768
+  ? "https://urban.com.bd/?utm_source=tbsnews&utm_medium=display&utm_campaign=urban_amenities&utm_content=320x50"
+  : "https://urban.com.bd/?utm_source=tbsnews&utm_medium=display&utm_campaign=urban_amenities&utm_content=728x90";
+</script>
 
 
 <style>
